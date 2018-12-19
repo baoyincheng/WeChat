@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class='app-container'>
+  <!-- 轮播图 -->
+  <view class='slider'>
+    <swiper autoplay loop>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src='{{item.img_url}}' lazy-load mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 九宫格 -->
+  <view class='index-nav'>
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="index">
+      <image src='{{item.img_url}}' lazy-load mode="aspectFill"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 分割线 -->
+  <view class='divider'>
+  </view>
+  <!-- 按钮 -->
+  
+</view>

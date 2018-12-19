@@ -1,0 +1,13 @@
+<!--pages/exam/exam.wxml-->
+<view>
+
+  <view wx:for="{{list}}" wx:key="index" bindtap='handleUser'>
+    <view data-uid='{{item.id}}'>{{item.name}}</view>
+  </view>
+  <view>跳转</view>
+    <view catchtap='jumpExam2' data-age='19'>exam2组件</view>
+  <view wx:for="{{list}}" wx:key="index" bindtap='handleUname'>
+    <view data-uname='{{item.name}}'>{{item.name}}</view>
+  </view>
+</view>
+

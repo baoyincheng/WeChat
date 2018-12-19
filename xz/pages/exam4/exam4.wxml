@@ -1,0 +1,4 @@
+<!--pages/exam4/exam4.wxml-->
+<view>
+  {{pid}}
+</view>

@@ -1,0 +1,9 @@
+<!--pages/exam3/exam3.wxml-->
+<view>
+  <!-- 简单的 -->
+  <view catchtap='handle1' data-idx='18'>tap事件处理参数获取参数</view>
+  <!-- 复杂的 -->
+  <view wx:for="{{list}}" wx:key="index" catchtap='handle2'>
+    <view data-pid="{{item.pid}}">{{item.pname}}</view>
+  </view>
+</view>
