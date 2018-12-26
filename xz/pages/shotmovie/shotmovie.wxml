@@ -1,12 +1,13 @@
 <view>
-  <view class='mov-item'>
+  <view class='mov-item' wx:for="{{list}}" wx:key="{{index}}">
     <view class='mov-top'>
-      <image src='http://127.0.0.1:3000/img/banner1.png' lazy-load='true' mode='aspectFill'></image>
-      <text>hhhhh</text>
+      <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
     </view>
     <view class='mov-bot'>
-      <image src='/pages/static/home' lazy-load='true' mode='aspectFill'></image>
-      <image src='/pages/static/home' lazy-load='true' mode='aspectFill'></image>
+      <text>播放次数:{{item.act}}</text>
+      <image src='/pages/static/movie2.png' lazy-load='true' mode='aspectFill'></image>
+      <image src='/pages/static/movie1.png' lazy-load='true' mode='aspectFill'></image>
     </view>
   </view>
 </view>

@@ -14,9 +14,9 @@
       <text>热门搜索</text>
     </view>
 
-    <view class='hot-cont'>
-      <text>6</text>
-      <text>999</text>
+    <view class='hot-cont' wx:for="{{list}}" wx:key='{{index}}'>
+      <text>{{item.id}}</text>
+      <text>{{item.cont}}</text>
     </view>
   </view>
 </view>

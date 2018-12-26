@@ -50,13 +50,14 @@
       line-height: 60rpx;
       font-weight: bold;
       font-size: 15px;
-      border: 1rpx solid red;
+      /* border: 1rpx solid red; */
     }
 
     .hot-cont{
-      border:1rpx solid red;
+      border-top:1rpx solid #ddd;
       margin-top:10rpx;
       margin-left: 20rpx;
+      padding-top:10rpx;
 
     }
     .hot-cont text:first-child{

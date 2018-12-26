@@ -2,12 +2,12 @@
   width: 100%;
   height: 500rpx;
   position: relative;
-  border: 1rpx solid rgb(248, 250, 125);
+  /* border: 1rpx solid rgb(248, 250, 125); */
 }
 .mov-top{
   width: 100%;
   height:420rpx;
-  border: 1rpx solid rgb(49, 250, 59);
+  /* border: 1rpx solid rgb(49, 250, 59); */
 }
 .mov-top image{
   height:420rpx;
@@ -15,14 +15,29 @@
 }
 .mov-top text{
   position: absolute;
-  top: 0;
-  left: 0;
+  font-size: 14px;
+  color: #fff;
+  top: 20rpx;
+  left: 20rpx;
 }
 .mov-bot{
+  position: relative;
   width: 100%;
   height: 80rpx;
-  border: 1rpx solid rgb(245, 69, 221);
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1rpx solid rgb(245, 69, 221); */
+}
+.mov-bot text{
+  position:absolute;
+  font-size: 12px;
+  line-height: 80rpx;
+  color: #aaa;
+  left:20rpx;
 }
 .mov-bot image{
-  height:100rpx;
+  padding-top: 20rpx;
+  padding-right:20rpx;
+  height:40rpx;
+  width: 40rpx;
 }
