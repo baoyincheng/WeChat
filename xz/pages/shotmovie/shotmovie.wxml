@@ -1,0 +1,12 @@
+<view>
+  <view class='mov-item'>
+    <view class='mov-top'>
+      <image src='http://127.0.0.1:3000/img/banner1.png' lazy-load='true' mode='aspectFill'></image>
+      <text>hhhhh</text>
+    </view>
+    <view class='mov-bot'>
+      <image src='/pages/static/home' lazy-load='true' mode='aspectFill'></image>
+      <image src='/pages/static/home' lazy-load='true' mode='aspectFill'></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view>
+  <view class='page_row' bindtap="suo">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class="" placeholder="请输入关键字" confirm-type="search" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+      <view class='sousuo'>搜索</view>  
+  </view>
+  <!-- 热门搜索 -->
+  <view class='hot'>
+    <view class='hot-top'>
+      <text>热门搜索</text>
+    </view>
+
+    <view class='hot-cont'>
+      <text>6</text>
+      <text>999</text>
+    </view>
+  </view>
+</view>

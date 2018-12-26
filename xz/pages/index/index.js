@@ -1,35 +1,56 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+  
 Page({
+  handleJump:function(e){
+    var id = e.target.dataset.id;
+    console.log(id);
+    if(id==1){
+     wx.navigateTo({
+        url: '/pages/tvlist/tvlist',
+      })
+    }
+  },
+  sou:function(){
+    wx.navigateTo({
+      url: '/pages/sou/sou',
+    })
+  },
+  update:function(){
+    wx.request({
+      url: 'http://127.0.0.1:3000/upd',
+      success:(result)=>{
+        console.log(result.data);
+        this.setData({
+          upd:result.data,
+        })
+      }
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
     list: [
-      { id: 1, img_url: "http://127.0.0.1:3000/img/banner1.png" },
-      { id: 2, img_url: "http://127.0.0.1:3000/img/banner2.png" }, 
-      { id: 3, img_url: "http://127.0.0.1:3000/img/banner3.png" }, 
-      { id: 4, img_url:"http://127.0.0.1:3000/img/banner4.png"}
+      { id: 1, img_url: "http://127.0.0.1:3000/img/4f367fb63d22d3269f071a0085c7b7a4.jpg" },
+      { id: 2, img_url: "http://127.0.0.1:3000/img/5cbeb7a3bb8a32b788c8e0e6068f16b7.jpg" }, 
+      { id: 3, img_url: "http://127.0.0.1:3000/img/c7566e10c304f119994bb0d81c0f76f6.jpg" }, 
+      { id: 4, img_url:"http://127.0.0.1:3000/img/fa1918b333b4cf61f7d5ac1fdd7b84f8.jpg"}
     ],
-    navlist: [{ id: 1, img_url: "http://127.0.0.1:3000/icons/grid-01.png",title:"看你"},
-      { id: 2, img_url: "http://127.0.0.1:3000/icons/grid-02.png",title:"看你"},
-      { id: 3, img_url: "http://127.0.0.1:3000/icons/grid-03.png",title:"看你"},
-      { id: 4, img_url: "http://127.0.0.1:3000/icons/grid-04.png",title:"看你"},
-      { id: 5, img_url: "http://127.0.0.1:3000/icons/grid-05.png",title:"看你"},
-      { id: 6, img_url: "http://127.0.0.1:3000/icons/grid-06.png",title:"看你"},
-      { id: 7, img_url: "http://127.0.0.1:3000/icons/grid-07.png",title:"看你"},
-      { id: 8, img_url: "http://127.0.0.1:3000/icons/grid-08.png",title:"看你"},
-      { id: 9, img_url: "http://127.0.0.1:3000/icons/grid-09.png",title:"看你"},
-    ]
+    navlist: [{ id:1,img_url:"http://127.0.0.1:3000/icons/4.png",title:"剧集"},
+      { id: 2, img_url: "http://127.0.0.1:3000/icons/2.png",title:"电影"},
+      { id: 3, img_url: "http://127.0.0.1:3000/icons/3.png",title:"综艺"},
+      { id: 4, img_url: "http://127.0.0.1:3000/icons/1.png",title:"动漫"},
+    ],
+    upd:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.update();
   },
 
   /**

@@ -1,0 +1,68 @@
+.page_row{  
+      display: flex;  
+      flex-direction: row;
+      border-bottom: 1rpx solid rgb(221, 221, 221); 
+    }  
+.search{  
+      width: 80%; 
+      font-size:12px;
+      color: #aaa; 
+    }  
+    .search_arr {  
+      margin-left: 20rpx;  
+    }  
+    .search_arr input{  
+      margin-left: 60rpx;  
+      height: 70rpx;    
+    }  
+    .bc_text {  
+      line-height: 68rpx;  
+      height: 68rpx;  
+      margin-top: 34rpx;  
+    }  
+      
+    .sousuo {  
+      margin-top: 10rpx;
+      margin-left: 15rpx;  
+      width: 15%;  
+      line-height: 150%;  
+      text-align: center; 
+      color: #aaa;
+      font-size: 15px;   
+    }  
+    
+    .searchcion {  
+      margin: 12rpx 10rpx 10rpx 10rpx;  
+      position: absolute;  
+      left:20rpx;  
+      z-index: 2;  
+      width: 5px;  
+      height: 5px;  
+      text-align: center;  
+    }  
+    .hot{
+      margin-top:10rpx; 
+    }
+    .hot-top{
+      height: 60rpx;
+      width: 100%;
+      margin-left:20rpx;
+      line-height: 60rpx;
+      font-weight: bold;
+      font-size: 15px;
+      border: 1rpx solid red;
+    }
+
+    .hot-cont{
+      border:1rpx solid red;
+      margin-top:10rpx;
+      margin-left: 20rpx;
+
+    }
+    .hot-cont text:first-child{
+      color:rgb(255, 0, 0);
+    }
+    .hot-cont text:last-child{
+      margin-left: 15rpx;
+      font-size: 14px;
+    }

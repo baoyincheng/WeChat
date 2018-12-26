@@ -1,0 +1,9 @@
+<view>
+  <view class='card' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='card-title'>{{item.title}}</view>
+    <view class='card-data'>{{item.ctime}}</view>
+    <image class='card-img' src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+    <view class='card-desc ell'>{{item.desc1}}</view>
+    <view class='arrow card-rad'>查看详情</view>
+  </view>
+</view>

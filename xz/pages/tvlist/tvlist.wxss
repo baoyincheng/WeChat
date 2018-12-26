@@ -1,0 +1,99 @@
+/* 轮播图 */
+.slider,.slider swiper,.slider image{
+  width: 100%;
+  height: 300rpx;
+}
+
+
+page{
+  background-color: #fff;
+}
+.shop{
+  
+  padding:20rpx;
+  border-bottom:1px solid #ddd;
+  display: flex;
+  position: relative;
+}
+.shop-img{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+.shop-info{
+  width:520rpx;
+  font-size:12px;
+  color:#666;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.shop-title{
+  font-size:16px;
+  color:#333;
+  width: 380rpx;
+
+}
+.stop-star{
+  position: absolute;
+  right:20rpx;
+  top:20rpx;
+}
+.start-after{
+  color:#e2e2e2;
+  
+  
+}
+.start-before{
+  color:#f19e38;
+  position: absolute;
+  top:0;
+  left:0;
+  width:70%;
+  overflow:hidden;
+}
+
+.kong{
+  height: 5rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.mid{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.mid-for{
+  display: flex;
+  flex-wrap:wrap;
+}
+.mid-item{
+
+  width:50%;
+  height: 300rpx;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mid-item image{
+  padding-top: 20rpx;
+  width: 365rpx;
+}
+.mid-update{
+  font-size: 8px;
+  color: #fff;
+  position: absolute;
+  bottom:85rpx;
+  right: 27rpx;
+}
+.mid-title{
+  font-size:12px;
+  padding-top: 10rpx;
+}
+.mid-exp{
+  font-size: 10px;
+  color: #aaa;
+}

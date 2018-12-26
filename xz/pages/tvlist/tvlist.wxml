@@ -1,0 +1,27 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view>
+<view class='kong'></view>
+<!-- 轮播图 -->
+  <view class='slider'>
+    <swiper autoplay loop>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src='{{item.img_url}}' lazy-load="true" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='kong'></view>
+
+  <view>
+    <view class='mid'>
+      <text>最新热剧</text>
+    </view>
+    <view class='mid-for'>
+      <view class='mid-item' wx:for="{{upd}}" wx:key="{{index}}">
+        <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+        <text class='mid-update'>更新至{{item.upd}}集</text>
+        <text class='mid-title'>{{item.title}}</text>
+        <text class='mid-exp'>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

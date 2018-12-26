@@ -1,0 +1,24 @@
+<view>
+  <view class='avatar'>
+    <view class="userinfo">
+      <button class='user-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap='getLogin'>登录</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <!-- 个人列表 -->
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item arrow'>个人资料</view>
+    <view class='cell-item arrow'>我的订阅</view>
+    <view class='divider'></view>
+    <view class='cell-item arrow'>观看历史</view>
+    <view class='cell-item arrow'>点赞作品</view>
+    <view class='cell-item arrow'>意见反馈</view>
+    <view class='cell-item arrow'>消息推送</view>
+    <view class='divider'></view>
+    <view class='cell-item arrow'>设置</view>
+  </view>
+</view>
