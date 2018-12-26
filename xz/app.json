@@ -1,34 +1,43 @@
 {
   "pages": [
-    
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/home/home",
-    "pages/shoplist/shoplist",
-    "pages/exam2/exam2",
-    "pages/exam4/exam4",
-    "pages/exam3/exam3",
-    "pages/exam/exam"
+    "pages/sou/sou",
+    "pages/tvlist/tvlist",
+    "pages/shotmovie/shotmovie",
+    "pages/message/message",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "动漫",
+    "navigationBarTitleText": "WHALE视频",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/exam/exam",
-        "text": "信息",
+        "pagePath": "pages/index/index",
+        "text": "首页",
         "iconPath": "pages/static/home.png",
         "selectedIconPath": "pages/static/home-active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/shotmovie/shotmovie",
+        "text": "短视频",
+        "iconPath": "pages/static/movie.png",
+        "selectedIconPath": "pages/static/movie-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
         "iconPath": "pages/static/message.png",
         "selectedIconPath": "pages/static/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "pages/static/profile.png",
+        "selectedIconPath": "pages/static/profile-active.png"
       }
     ]
   }

@@ -1,4 +1,7 @@
 /**app.wxss**/
+page{
+    background-color: #f7f7f7;
+  }
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +10,36 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+.ell{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.divider{
+  height: 30rpx;
+  background-color: #f1f1f1;
+}
+.cell{
+  background-color: #fff;
+  font-size: 16px;
+}
+.cell-item{
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+/* 通用箭头 */
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 箭头 */
+.arrow::after{
+  content: "";
+  width:15rpx;
+  height: 15rpx;
+  border-top: 3rpx solid #ccc;
+  border-right: 3rpx solid #ccc;
+  transform: rotate(45deg);
+}
