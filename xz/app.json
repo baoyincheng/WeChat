@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/profile/profile",
     "pages/index/index",
     "pages/sou/sou",
     "pages/tvlist/tvlist",
     "pages/shotmovie/shotmovie",
-    "pages/message/message",
-    "pages/profile/profile"
+    "pages/message/message"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
